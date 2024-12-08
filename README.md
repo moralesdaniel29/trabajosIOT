@@ -1,25 +1,30 @@
-# trabajosIOT
+# Practicas de clase
 Documentación de practicas de IoT vistas en clase
 
 # Proyecto: Serie de LEDs con Arduino
 
-Este proyecto consiste en la implementación de un programa en Arduino que controla una serie de LEDs. Los LEDs se encienden de forma secuencial según un intervalo de tiempo configurado, creando un efecto visual dinámico.
+Este proyecto implementa un programa en Arduino que controla una serie de LEDs. Los LEDs se encienden y apagan de forma secuencial con un intervalo de 500 ms, creando un efecto visual dinámico.
 
 ## Materiales
-- **LEDs**: La cantidad depende de los pines digitales disponibles en la placa Arduino.
-- **Jumpers**: Uno más que la cantidad de LEDs para la conexión al puerto GND.
-- **Resistencias de 220 ohmios**: Una por cada LED.
+- **7 LEDs**: Uno para cada puerto digital asignado en el código.
+- **Jumpers**: 8 (7 para los LEDs y 1 para conectar al puerto GND de la placa).
+- **7 Resistencias de 220 ohmios**: Una para cada LED.
 - **Placa Arduino**: Compatible con el IDE de Arduino.
 - **Laptop o computadora**: Para programar y cargar el código en la placa.
 - **Cable USB**: Para conectar la placa Arduino a la computadora.
-- **IDE de Arduino**: Disponible en [https://www.arduino.cc/](https://www.arduino.cc/).
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
 
-## Instrucciones de implementación
-### Paso 1: Configuración del circuito
-1. Asigna un puerto digital del Arduino para cada LED. Por ejemplo, usa los pines del 0 al 13.
-2. Conecta una resistencia de 220 ohmios en serie con cada LED.
-3. Conecta el cátodo (pata corta) de cada LED al GND de la placa Arduino.
-4. Conecta el ánodo (pata larga) de cada LED al puerto digital correspondiente mediante jumpers.
+## Código
+El siguiente código configura 7 LEDs conectados a los pines digitales de la placa Arduino y los controla para encenderlos de forma secuencial con un retardo de 500 ms:
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/0abf399e-7662-4c7e-b268-fcfd53a10be4)
+
+**Conexión de los LEDs**:
+   - Conecta el cátodo (pata corta) de cada LED al puerto GND de la placa Arduino.
+   - Conecta el ánodo (pata larga) al pin digital correspondiente usando resistencias de 220 ohmios.
+
+
 
 # Proyecto: Semáforo con Arduino
 
@@ -39,59 +44,139 @@ Este proyecto consiste en la implementación de un semáforo usando una placa Ar
    - Conecta el cátodo (pata corta) de cada LED al puerto GND de la placa Arduino.
    - Conecta el ánodo (pata larga) al pin digital correspondiente (ejemplo: pin 13 para rojo, 12 para amarillo, 11 para verde) usando resistencias de 220 ohmios.
 
+## Diagrama
+![image](https://github.com/user-attachments/assets/de9b87e9-7f92-41f2-b172-1c22966d3600)
+
+
 
 # Proyecto: Sensor de Luz con LDR y Arduino
 
-Este proyecto implementa un programa en Arduino utilizando un sensor LDR (Light Dependent Resistor) para medir la intensidad de luz en el ambiente.
+Este proyecto utiliza un sensor LDR (Light Dependent Resistor) para medir la intensidad de luz en el ambiente y controlar un LED en función de la cantidad de luz detectada.
 
 ## Materiales
 - **1 LDR**: Para medir la intensidad lumínica.
-- **2 Jumpers**: Uno para conectar al puerto GND y otro al puerto 5V de la placa.
 - **1 Resistencia de 10k ohmios**: Para crear un divisor de tensión junto con el LDR.
+- **1 LED Azul**: Indicador visual que se enciende en condiciones de poca luz.
+- **4 Jumpers**: Para realizar las conexiones.
 - **Placa Arduino**: Compatible con el IDE de Arduino.
-- **Laptop o computadora**: Para escribir y cargar el código.
+- **Laptop o computadora**: Para escribir y cargar el código en la placa.
 - **Cable USB**: Para conectar la placa Arduino.
 - **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
 
-## Configuración del Circuito
-1. **Conexión del LDR**:
-   - Conecta un extremo del LDR al pin analógico A0 de la placa Arduino.
-   - Conecta el otro extremo del LDR al puerto de 5V.
-   
-2. **Conexión de la Resistencia de 10k ohmios**:
-   - Conecta un extremo de la resistencia al pin A0 (junto con el LDR).
-   - Conecta el otro extremo al puerto GND.
+## Código
+El siguiente código configura un sensor LDR conectado al pin analógico A5 y un LED conectado al pin digital 2. Si el nivel de luz es inferior al umbral establecido (valor mayor a 300), el LED se enciende:
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/957275c2-0f10-419b-b545-3830e76af773)
 
 
-# Proyecto: Visualización de Intensidad Lumínica con LCD y LDR
 
-Este proyecto combina una pantalla LCD y un sensor LDR para medir y mostrar la intensidad lumínica en tiempo real. Los datos obtenidos del fotoresistor se presentan en la pantalla LCD conectada a una placa Arduino.
+# Proyecto: Intensidad Lumínica con LCD y LDR
+
+Este proyecto utiliza un sensor LDR para medir la intensidad lumínica del ambiente y mostrar esos valores en una pantalla LCD. Además, un LED azul se enciende o apaga según el valor de luz medido, proporcionando una retroalimentación visual.
 
 ## Materiales
-- **1 LCD**: Pantalla para mostrar los datos de intensidad lumínica.
+- **1 LCD (LiquidCrystal)**: Pantalla para mostrar los datos de intensidad lumínica.
 - **1 LDR**: Sensor para medir la intensidad lumínica del ambiente.
-- **2 Jumpers**: Para las conexiones a GND y 5V.
+- **1 LED Azul**: Indicador visual que se enciende o apaga dependiendo de la cantidad de luz detectada.
 - **1 Resistencia de 10k ohmios**: Para crear un divisor de tensión con el LDR.
+- **2 Jumpers**: Para las conexiones a GND y 5V.
 - **Placa Arduino**: Compatible con el IDE de Arduino.
-- **Laptop o computadora**: Para escribir y cargar el código.
+- **Laptop o computadora**: Para escribir y cargar el código en la placa Arduino.
 - **Cable USB**: Para conectar la placa Arduino.
 - **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
 
-## Configuración del Circuito
-### Diagrama del circuito
+## Código
+El siguiente código configura un sensor LDR conectado al pin analógico A5 y un LED azul conectado al pin digital 10. La intensidad lumínica se lee y se muestra en la pantalla LCD. Si la luz medida es mayor que el umbral de 700, el LED se enciende; de lo contrario, se apaga.
+
+## Diagrama
 ![image](https://github.com/user-attachments/assets/7d4f9369-78d5-4ab4-934b-1de58a4d33cb)
-*(Incluye el diagrama de conexión para la pantalla LCD, el LDR y la resistencia)*
 
 
 
+# Proyecto: Sensor Ultrasonido y LEDs
 
-# Ultrasonico+serie
-En este archivo se utilizaron los componentes de la pantalla LCD y los LED. Los LED se encendían conforme un objeto se acercaba al sensor. Si la distancia inicial era de 30 cm, se encendía un LED. A medida que el objeto se acercaba en intervalos de 5 cm, se encendía un LED adicional, hasta que los 5 LED estuvieran encendidos, indicando la distancia mínima posible al sensor.
+Este proyecto utiliza un sensor de ultrasonido para medir la distancia de un objeto y visualizarla mediante la activación de diferentes LEDs en función de la proximidad del objeto al sensor. A medida que la distancia disminuye, los LEDs se encienden uno por uno, proporcionando una retroalimentación visual.
+
+## Materiales
+- **1 Sensor Ultrasonido**: Para medir la distancia del objeto en centímetros.
+- **5 LEDs** (Rojo, Azul, Verde, Amarillo, Blanco): Indicadores visuales que se encienden según la distancia medida.
+- **Resistencias**: Para conectar los LEDs de forma segura.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Laptop o computadora**: Para escribir y cargar el código en la placa Arduino.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+## Código
+El siguiente código, configura un sensor Ultrasonico, para que encienda led por led cada 5 centimetros que se acerque.
+## Diagrama
+![image](https://github.com/user-attachments/assets/994d1ad4-6f97-44df-9c85-b2c1ee3b23d9)
+
+
+
 # Ultranico+LCD
 En este archivo se utilizaron la pantalla LCD y el sensor ultrasónico. Estos componentes sirvieron para mostrar en la pantalla la distancia detectada por el sensor hasta localizar un objeto.
-# RGB 
-En este archivo utilizamos el componente RGB, un LED que puede alternar entre diferentes colores sin la necesidad de usar LEDs individuales de un solo color. En clase, lo empleamos para proyectar diversos colores.
-# DHT-11
-Utilizamos este sensor para medir la temperatura del ambiente.
+# Ultrasonido + LCD
+Este proyecto utiliza un sensor de ultrasonido para medir la distancia a un objeto y visualiza esa distancia en una pantalla LCD. Además, enciende un LED cuando el objeto está a menos de 30 cm de distancia.
+
+## Materiales
+- **1 Sensor Ultrasonido** : Para medir la distancia entre el sensor y el objeto en centímetros.
+- **1 Pantalla LCD** : Para mostrar la distancia medida.
+- **1 LED**: Se enciende cuando la distancia es menor a 30 cm.
+- **Resistencias**: Para conectar el LED de forma segura.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/71dcfb80-bee8-43bf-83b1-8e1468c6cda5)
+
+
+
+# RGB LED
+En este proyecto, utilizamos un LED RGB, el cual puede generar una amplia gama de colores combinando tres colores básicos: rojo, verde y azul. Cada color se controla mediante un valor de intensidad, que varía entre 0 (apagado) y 255 (máxima intensidad). Este código permite cambiar el color del LED RGB a diferentes tonos según las combinaciones de estos valores.
+
+## Materiales
+- **1 LED RGB**: Un LED común que tiene tres pines para controlar los colores rojo, verde y azul.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Cable USB**: Para conectar la placa Arduino.
+- **Resistencias**: Para limitar la corriente que pasa a través de los pines del LED.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Descripción del Funcionamiento
+En este código se configura un LED RGB para proyectar varios colores mediante la combinación de señales en los pines correspondientes al rojo, verde y azul.
+
+- **RGB LED**:
+  - El pin **rojo** controla el color rojo.
+  - El pin **verde** controla el color verde.
+  - El pin **azul** controla el color azul.
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/7d3ad24b-7651-4d09-a16a-d39d6c14de7c)
+
+
+
+# DHT-11 Sensor de Temperatura y Humedad
+
+En este proyecto se utiliza el sensor **DHT-11** para medir la temperatura y la humedad del ambiente. Los datos obtenidos se visualizan en el monitor serie de Arduino, y un LED se enciende cuando la temperatura alcanza un umbral determinado.
+
+## Materiales
+
+- **Sensor DHT-11**: Sensor de temperatura y humedad digital.
+- **LED**: Se usa para indicar que la temperatura ha alcanzado un umbral determinado.
+- **Resistor de 10kΩ**: Para conectar el sensor DHT-11.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Descripción del Funcionamiento
+El código configura el sensor **DHT-11** para leer la temperatura y la humedad del ambiente. La temperatura y la humedad se muestran en el monitor serie. Además, un **LED** se enciende si la temperatura supera los **28°C**. El sensor **DHT-11** se conecta al pin digital **3** del Arduino, mientras que el **LED** se controla desde el pin digital **2**.
+- **DHT-11**: Se comunica con el Arduino utilizando la biblioteca **DHT** para obtener las mediciones de temperatura y humedad.
+- **LED**: Se enciende cuando la temperatura es igual o mayor a 28°C.
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/67bfa5d4-ebc1-4fec-88ae-d7a9ac0d760a)
+
+
+
 # Examen
 El examen consistía en conectar un LED RGB y un sensor DHT11 a la placa Arduino. Si la temperatura detectada era mayor a 28°C, el LED se encendía de color rojo; si era menor a 28°C, se encendía de color verde. Había otra condición, que no recuerdo, para encender el color azul.
