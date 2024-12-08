@@ -20,8 +20,28 @@ Este proyecto consiste en la implementación de un programa en Arduino que contr
 3. Conecta el cátodo (pata corta) de cada LED al GND de la placa Arduino.
 4. Conecta el ánodo (pata larga) de cada LED al puerto digital correspondiente mediante jumpers.
 
-# Semafóro
-En este documento, se puede ver la implementación de un archivo de arduino, donde se realizo un semaforo para carros, que con un tiempo especificado con el que cambiaran de color.
+# Proyecto: Semáforo con Arduino
+
+Este proyecto consiste en la implementación de un semáforo usando una placa Arduino y LEDs. Los colores cambian de forma secuencial, simulando el funcionamiento de un semáforo real, con tiempos específicos configurados para cada luz.
+
+## Materiales
+- **3 LEDs** (rojo, amarillo y verde): Representan las luces del semáforo.
+- **4 Jumpers**: Uno más que la cantidad de LEDs para la conexión al puerto GND.
+- **3 Resistencias de 220 ohmios**: Una para cada LED.
+- **Placa Arduino**: Cualquier modelo compatible con el IDE de Arduino.
+- **Laptop**: Para escribir y cargar el código.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Configuración del Circuito
+**Conexión de los LEDs**:
+   - Conecta el cátodo (pata corta) de cada LED al puerto GND de la placa Arduino.
+   - Conecta el ánodo (pata larga) al pin digital correspondiente (ejemplo: pin 13 para rojo, 12 para amarillo, 11 para verde) usando resistencias de 220 ohmios.
+
+
+
+
+
 # LDR 
 En este documento, se puede ver la implementación de un archivo de arduino, donde se realizo un trabajo usando el componente LDR que nos sirvio para obtener el valor de luz del ambiente.
 # LCD+LDR
