@@ -79,7 +79,7 @@ Este proyecto combina una pantalla LCD y un sensor LDR para medir y mostrar la i
 
 ## Configuración del Circuito
 ### Diagrama del circuito
-![Circuito con LCD y LDR](CircuitDiagram_LCD_LDR.png)  
+![image](https://github.com/user-attachments/assets/7d4f9369-78d5-4ab4-934b-1de58a4d33cb)
 *(Incluye el diagrama de conexión para la pantalla LCD, el LDR y la resistencia)*
 
 
