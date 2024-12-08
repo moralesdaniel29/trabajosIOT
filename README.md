@@ -1,5 +1,6 @@
 # trabajosIOT
 Documentación de practicas de IoT vistas en clase
+
 # Proyecto: Serie de LEDs con Arduino
 
 Este proyecto consiste en la implementación de un programa en Arduino que controla una serie de LEDs. Los LEDs se encienden de forma secuencial según un intervalo de tiempo configurado, creando un efecto visual dinámico.
@@ -39,13 +40,51 @@ Este proyecto consiste en la implementación de un semáforo usando una placa Ar
    - Conecta el ánodo (pata larga) al pin digital correspondiente (ejemplo: pin 13 para rojo, 12 para amarillo, 11 para verde) usando resistencias de 220 ohmios.
 
 
+# Proyecto: Sensor de Luz con LDR y Arduino
+
+Este proyecto implementa un programa en Arduino utilizando un sensor LDR (Light Dependent Resistor) para medir la intensidad de luz en el ambiente.
+
+## Materiales
+- **1 LDR**: Para medir la intensidad lumínica.
+- **2 Jumpers**: Uno para conectar al puerto GND y otro al puerto 5V de la placa.
+- **1 Resistencia de 10k ohmios**: Para crear un divisor de tensión junto con el LDR.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Laptop o computadora**: Para escribir y cargar el código.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Configuración del Circuito
+1. **Conexión del LDR**:
+   - Conecta un extremo del LDR al pin analógico A0 de la placa Arduino.
+   - Conecta el otro extremo del LDR al puerto de 5V.
+   
+2. **Conexión de la Resistencia de 10k ohmios**:
+   - Conecta un extremo de la resistencia al pin A0 (junto con el LDR).
+   - Conecta el otro extremo al puerto GND.
+
+
+# Proyecto: Visualización de Intensidad Lumínica con LCD y LDR
+
+Este proyecto combina una pantalla LCD y un sensor LDR para medir y mostrar la intensidad lumínica en tiempo real. Los datos obtenidos del fotoresistor se presentan en la pantalla LCD conectada a una placa Arduino.
+
+## Materiales
+- **1 LCD**: Pantalla para mostrar los datos de intensidad lumínica.
+- **1 LDR**: Sensor para medir la intensidad lumínica del ambiente.
+- **2 Jumpers**: Para las conexiones a GND y 5V.
+- **1 Resistencia de 10k ohmios**: Para crear un divisor de tensión con el LDR.
+- **Placa Arduino**: Compatible con el IDE de Arduino.
+- **Laptop o computadora**: Para escribir y cargar el código.
+- **Cable USB**: Para conectar la placa Arduino.
+- **IDE de Arduino**: Descargable desde [https://www.arduino.cc/](https://www.arduino.cc/).
+
+## Configuración del Circuito
+### Diagrama del circuito
+![Circuito con LCD y LDR](CircuitDiagram_LCD_LDR.png)  
+*(Incluye el diagrama de conexión para la pantalla LCD, el LDR y la resistencia)*
 
 
 
-# LDR 
-En este documento, se puede ver la implementación de un archivo de arduino, donde se realizo un trabajo usando el componente LDR que nos sirvio para obtener el valor de luz del ambiente.
-# LCD+LDR
-En este documento se utilizó el componente de la pantalla LCD y el componente fotoresistor (LDR). En esta implementación, se obtenían datos del fotoresistor y se mostraban en la pantalla LCD.
+
 # Ultrasonico+serie
 En este archivo se utilizaron los componentes de la pantalla LCD y los LED. Los LED se encendían conforme un objeto se acercaba al sensor. Si la distancia inicial era de 30 cm, se encendía un LED. A medida que el objeto se acercaba en intervalos de 5 cm, se encendía un LED adicional, hasta que los 5 LED estuvieran encendidos, indicando la distancia mínima posible al sensor.
 # Ultranico+LCD
