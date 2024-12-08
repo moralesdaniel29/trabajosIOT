@@ -178,5 +178,20 @@ El código configura el sensor **DHT-11** para leer la temperatura y la humedad 
 
 
 
-# Examen
-El examen consistía en conectar un LED RGB y un sensor DHT11 a la placa Arduino. Si la temperatura detectada era mayor a 28°C, el LED se encendía de color rojo; si era menor a 28°C, se encendía de color verde. Había otra condición, que no recuerdo, para encender el color azul.
+# Examen: Proyecto LED RGB y Sensor DHT11
+
+El examen consistía en conectar un LED RGB y un sensor DHT11 a la placa Arduino. Si la temperatura detectada era mayor a 28°C, el LED se encendía de color rojo; si era menor a 28°C, se encendía de color azul. 
+
+## Materiales
+
+- **Arduino Uno**: Placa base para controlar el proyecto.
+- **LED RGB**: LED de tres colores (rojo, verde y azul) que puede mezclar colores para mostrar diversos estados.
+- **Sensor DHT11**: Sensor para medir la temperatura y la humedad del ambiente.
+- **Resistor de 220Ω**: Usado para limitar la corriente al LED.
+- **Cables de conexión**: Para realizar las conexiones entre los componentes y la placa Arduino.
+- **Placa de protoboard**: Para organizar los componentes de forma temporal mientras se realiza el montaje.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa Arduino.
+
+## Diagrama
+![image](https://github.com/user-attachments/assets/2e70b121-0fd7-443b-bbc1-cdefe94df592)
+
