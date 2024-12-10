@@ -368,17 +368,54 @@ En esta exposición impartida por mis compañeros, usaron un servo motor y un se
 
 El siguiente código controla la apertura automática de la tapa del bote de basura y la iluminación de los LEDs según la distancia detectada por el sensor ultrasónico.
 
+## Diagrama
+![Imagen de WhatsApp 2024-12-06 a las 08 31 29_cdcaa536](https://github.com/user-attachments/assets/33c33527-241d-4342-9627-a74c04a976ca)
 
 
 
 
-# Expocisión del equipo de Fernando usaron un Zumbador
+# Exposición del equipo de Fernando: Uso de un Zumbador
 
-En esta exposición impartida por mis compañeros, usaron un Zumbador para emitir una notas simulando una alarma.
+En esta exposición impartida por mis compañeros, se utilizó un Zumbador para emitir notas que simulan una alarma.
+
+## Código
+
+El código implementa la funcionalidad para reproducir dos melodías diferentes mediante un zumbador conectado al pin 10. Un pulsador conectado al pin 2 permite alternar entre las melodías y reiniciar el estado tras completar ambas.
+
+### Definiciones de notas musicales
+
+Las frecuencias de las notas musicales están definidas en el archivo `pitches.h` y se incluyen en el código principal.
+
+### Funcionalidad del código
+
+1. **Configuración inicial**: 
+   - El pin 2 está configurado como entrada con resistencia pull-up.
+   - El pin 10 está configurado como salida.
+
+2. **Control por pulsador**:
+   - Se utiliza un pulsador para alternar entre diferentes estados.
+   - Un sistema de debounce asegura que las pulsaciones no generen múltiples acciones no deseadas.
+
+3. **Reproducción de melodías**:
+   - Al presionar el pulsador por primera vez, se reproduce la primera melodía.
+   - Al presionar el pulsador por segunda vez, se reproduce la segunda melodía.
+   - Al presionar el pulsador por tercera vez, se reinicia el estado.
+
+4. **Reinicio de estado**:
+   - Cuando ambas melodías terminan, el contador y los índices de las melodías se reinician.
 
 ## Materiales
+  - Arduino (modelo sugerido: Uno o compatible).
+  - Zumbador.
+  - Pulsador.
+  - Resistencias para el pulsador (en caso de no usar resistencia pull-up interna).
+  - Cables de conexión.
+  - Biblioteca de definiciones de frecuencias: `pitches.h`.
+
+## Diagrama
+![Imagen de WhatsApp 2024-12-09 a las 19 33 52_2ecba203](https://github.com/user-attachments/assets/20dcc3fd-eb36-4400-a13e-859dbec1c971)
 
 
 
 
-
+   
