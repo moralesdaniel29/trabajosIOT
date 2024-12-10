@@ -195,3 +195,26 @@ El examen consistía en conectar un LED RGB y un sensor DHT11 a la placa Arduino
 ## Diagrama
 ![image](https://github.com/user-attachments/assets/2e70b121-0fd7-443b-bbc1-cdefe94df592)
 
+
+# Joystick equipo de Emmanuel
+
+La exposición que impartieron mis compañeros trato de implementar un joystick que conforme fuera movido encenderia un led puesto que cada lado en donde apuntara el joystick es como encenderia uno de los leds que estarian colocados en forma de cruz para ver como realmente detectaba el moviento en los leds.
+
+## Materiales
+
+- **Arduino Uno**: Placa base para controlar el proyecto.
+- **Cables de conexión**: Para realizar las conexiones entre los componentes y la placa Arduino.
+- **Joystick**
+- **4 leds**
+- **Placa de protoboard**: Para organizar los componentes de forma temporal mientras se realiza el montaje.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa Arduino.
+
+
+
+
+
+
+
+
+
+
