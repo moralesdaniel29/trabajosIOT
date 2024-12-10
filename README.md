@@ -264,23 +264,54 @@ El siguiente código controla el sistema, detectando el movimiento del joystick 
 
 
 
-# Teclado de Membrana Matricial de 4x4 Expocisión de mi equipo
+#  Expocisión de mi equipo usando el Teclado de Membrana Matricial de 4x4.
 
-En la exposicion que imparti con mi equipo, propusimos usar el teclado 4x4 para sumilar un verificador de acceso aun lugar a travez de una contraseña, si ingresamos la contraseña correcta se encendera un led verde y en caso de que sea incorrecta prendera un led rojo.
+En la exposición que impartí con mi equipo, propusimos usar el teclado 4x4 para simular un verificador de acceso a un lugar a través de una contraseña. Si ingresamos la contraseña correcta, se encenderá un LED verde, y en caso de que sea incorrecta, se encenderá un LED rojo.
 
 ## Materiales
 
 - **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
 - **Cables de conexión**: Para conectar los componentes con la placa Arduino.
-- **Teclado 4x4**
-- **2 LEDs**
-- **Resistencias**
+- **Teclado 4x4**: Dispositivo de entrada para capturar contraseñas.
+- **2 LEDs**: Indicadores visuales para acceso correcto (verde) o incorrecto (rojo).
+- **Resistencias**: Para limitar la corriente en los LEDs.
 - **Protoboard**: Para organizar y montar los componentes de forma temporal.
 - **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
+- **Librería Keypad**: Necesaria para gestionar la interacción con el teclado matricial.
+
+## Conexiones
+
+1. **Teclado Matricial 4x4**:
+   - Conectar los pines de las filas a los pines digitales `9`, `8`, `7` y `6` del Arduino.
+   - Conectar los pines de las columnas a los pines digitales `5`, `4`, `3` y `2` del Arduino.
+
+2. **LEDs**:
+   - LED verde conectado al pin digital `11`.
+   - LED rojo conectado al pin digital `12`.
+
+## Código
+El siguiente código gestiona el ingreso de contraseñas y la verificación de acceso mediante un teclado 4x4.
+
+## Diagrama
+![Imagen de WhatsApp 2024-12-09 a las 19 25 55_4cd40720](https://github.com/user-attachments/assets/8c7a7f7d-6b8f-4920-a7d5-7e4695d7653f)
 
 
 
 
+
+#  Expocisión del equipo de Alejandro usaron Botones y Leds.
+
+En esta exposicion impartida por mis compañeros usaron botones, cada uno conectado a un led para que cuando sea presionado se encienda y apague, en caso de que se presionen los 3 botones en simultaneo no debe mostrar nada.
+
+## Materiales
+
+- **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
+- **Cables de conexión**: Para conectar los componentes con la placa Arduino.
+- **3 Botones**
+- **3 LEDs**: Indicadores visuales para acceso correcto (verde) o incorrecto (rojo).
+- **Resistencias**: Para limitar la corriente en los LEDs.
+- **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
 
 
 
