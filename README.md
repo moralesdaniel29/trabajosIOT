@@ -337,7 +337,7 @@ El siguiente código gestiona el encendido de LEDs mediante botones y asegura qu
 
 # Expocisión del equipo de Iris usaron un Servo motor y un Sensor Ultrasonico
 
-En esta exposición impartida por mis compañeros, usaron un servo motor y un sensor Ultrasonico, estos para simular la apertura de un bote de basura sin necesidad de usar las manos, al acercarse al bote este se abriria por un tiempo de 3 segundos y encenderia un led verde y despues se cerraria.
+En esta exposición impartida por mis compañeros, usaron un servo motor y un sensor ultrasónico para simular la apertura de un bote de basura sin necesidad de usar las manos. Al acercarse al bote, este se abriría por un tiempo de 3 segundos, encendería un LED verde y, después, se cerraría.
 
 ## Materiales
 
@@ -345,13 +345,38 @@ En esta exposición impartida por mis compañeros, usaron un servo motor y un se
 - **Cables de conexión**: Para conectar los componentes con la placa Arduino.
 - **Resistencias**: Para limitar la corriente en los LEDs.
 - **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **Servo motor**: Para simular la apertura de la tapa del bote.
+- **Sensor ultrasónico HC-SR04**: Para detectar la proximidad del usuario.
+- **LEDs**: Indicadores visuales (rojo y verde).
+- **Librería Servo.h**: Para controlar el servo motor.
 - **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
 
+## Conexiones
+
+1. **Sensor ultrasónico HC-SR04**:
+   - Pin `Trig` conectado al pin digital `9`.
+   - Pin `Echo` conectado al pin digital `10`.
+
+2. **Servo motor**:
+   - Cable de control conectado al pin digital `3`.
+
+3. **LEDs**:
+   - LED rojo conectado al pin digital `5`.
+   - LED verde conectado al pin digital `6`.
+
+## Código
+
+El siguiente código controla la apertura automática de la tapa del bote de basura y la iluminación de los LEDs según la distancia detectada por el sensor ultrasónico.
 
 
 
 
 
+# Expocisión del equipo de Fernando usaron un Zumbador
+
+En esta exposición impartida por mis compañeros, usaron un Zumbador para emitir una notas simulando una alarma.
+
+## Materiales
 
 
 
