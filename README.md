@@ -229,22 +229,54 @@ El siguiente código controla el sistema, generando números aleatorios y mostr�
 
 La exposición que impartieron mis compañeros trato de implementar un joystick que conforme fuera movido encenderia un led puesto que cada lado en donde apuntara el joystick es como encenderia uno de los leds que estarian colocados en forma de cruz para ver como realmente detectaba el moviento en los leds.
 
-## Materiales 
+## Materiales
 
 - **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
-- **Joystick**:
+- **Joystick**
 - **Cables de conexión**: Para conectar los componentes con la placa Arduino.
-- **4 leds**: 
+- **4 LEDs**
 - **4 Pulsadores**: Para alternar entre los estados de funcionamiento y detenerse.
-- **Resistencias**: 
+- **Resistencias**
 - **Protoboard**: Para organizar y montar los componentes de forma temporal.
 - **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
 
+## Conexiones
+
+1. **Joystick**: 
+   - Eje X conectado al pin analógico `A0`.
+   - Eje Y conectado al pin analógico `A1`.
+   - Botón (SW) conectado al pin digital `6` con una resistencia pull-up interna.
+
+2. **LEDs**:
+   - LED Arriba conectado al pin digital `8`.
+   - LED Abajo conectado al pin digital `10`.
+   - LED Izquierda conectado al pin digital `11`.
+   - LED Derecha conectado al pin digital `9`.
+   - LED Pulsación conectado al pin digital `12`.
+
+## Código
+
+El siguiente código controla el sistema, detectando el movimiento del joystick y encendiendo el LED correspondiente según la dirección.
+
+## Diagrama
+![Imagen de WhatsApp 2024-11-28 a las 09 49 35_c15482d6](https://github.com/user-attachments/assets/e665b7f8-8a26-42ed-81a9-5d9a4d705d0d)
 
 
 
 
+# Teclado de Membrana Matricial de 4x4 Expocisión de mi equipo
 
+En la exposicion que imparti con mi equipo, propusimos usar el teclado 4x4 para sumilar un verificador de acceso aun lugar a travez de una contraseña, si ingresamos la contraseña correcta se encendera un led verde y en caso de que sea incorrecta prendera un led rojo.
+
+## Materiales
+
+- **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
+- **Cables de conexión**: Para conectar los componentes con la placa Arduino.
+- **Teclado 4x4**
+- **2 LEDs**
+- **Resistencias**
+- **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
 
 
 
