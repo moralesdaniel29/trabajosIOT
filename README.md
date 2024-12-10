@@ -299,19 +299,55 @@ El siguiente código gestiona el ingreso de contraseñas y la verificación de a
 
 
 
-#  Expocisión del equipo de Alejandro usaron Botones y Leds.
+# Expocisión del equipo de Alejandro usaron Botones y Leds.
 
-En esta exposicion impartida por mis compañeros usaron botones, cada uno conectado a un led para que cuando sea presionado se encienda y apague, en caso de que se presionen los 3 botones en simultaneo no debe mostrar nada.
+En esta exposición impartida por mis compañeros, usaron botones, cada uno conectado a un LED para que, cuando sea presionado, este se encienda y apague. En caso de que se presionen los 3 botones simultáneamente, no debe mostrar nada.
 
 ## Materiales
 
 - **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
 - **Cables de conexión**: Para conectar los componentes con la placa Arduino.
-- **3 Botones**
-- **3 LEDs**: Indicadores visuales para acceso correcto (verde) o incorrecto (rojo).
+- **3 Botones**: Dispositivos para controlar los LEDs.
+- **3 LEDs**: Indicadores visuales de colores rojo, verde y azul.
 - **Resistencias**: Para limitar la corriente en los LEDs.
 - **Protoboard**: Para organizar y montar los componentes de forma temporal.
 - **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
+
+## Conexiones
+
+1. **Botones**:
+   - Botón rojo al pin digital `2`.
+   - Botón verde al pin digital `3`.
+   - Botón azul al pin digital `4`.
+
+2. **LEDs**:
+   - LED rojo al pin digital `9`.
+   - LED verde al pin digital `10`.
+   - LED azul al pin digital `11`.
+
+## Código
+
+El siguiente código gestiona el encendido de LEDs mediante botones y asegura que, si los tres botones son presionados simultáneamente, no se encienda ningún LED.
+
+## Diagrama
+![Imagen de WhatsApp 2024-11-29 a las 08 31 55_b768c48a](https://github.com/user-attachments/assets/5779942a-d43f-42c6-aec4-af10b86225f4)
+
+
+
+
+# Expocisión del equipo de Iris usaron un Servo motor y un Sensor Ultrasonico
+
+En esta exposición impartida por mis compañeros, usaron un servo motor y un sensor Ultrasonico, estos para simular la apertura de un bote de basura sin necesidad de usar las manos, al acercarse al bote este se abriria por un tiempo de 3 segundos y encenderia un led verde y despues se cerraria.
+
+## Materiales
+
+- **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
+- **Cables de conexión**: Para conectar los componentes con la placa Arduino.
+- **Resistencias**: Para limitar la corriente en los LEDs.
+- **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
+
+
 
 
 
