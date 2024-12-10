@@ -196,18 +196,58 @@ El examen consistía en conectar un LED RGB y un sensor DHT11 a la placa Arduino
 ![image](https://github.com/user-attachments/assets/2e70b121-0fd7-443b-bbc1-cdefe94df592)
 
 
-# Joystick equipo de Emmanuel
+# Display de 7 segmentos equipo de Orlando
 
-La exposición que impartieron mis compañeros trato de implementar un joystick que conforme fuera movido encenderia un led puesto que cada lado en donde apuntara el joystick es como encenderia uno de los leds que estarian colocados en forma de cruz para ver como realmente detectaba el moviento en los leds.
+La exposición impartida por mis compañeros se centró en la implementación de un Display de 7 segmentos programado para sortear números del 0 al 9. En cualquier momento, el proceso podría detenerse, y el Display de 7 segmentos mostraría el número en el que se detuvo.
 
 ## Materiales
 
-- **Arduino Uno**: Placa base para controlar el proyecto.
-- **Cables de conexión**: Para realizar las conexiones entre los componentes y la placa Arduino.
-- **Joystick**
-- **4 leds**
-- **Placa de protoboard**: Para organizar los componentes de forma temporal mientras se realiza el montaje.
-- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa Arduino.
+- **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
+- **Display de 7 segmentos**: Para mostrar los números generados.
+- **Cables de conexión**: Para conectar los componentes con la placa Arduino.
+- **Pulsador**: Para alternar entre los estados de funcionamiento y detenerse.
+- **Resistencias**: Para limitar la corriente en los pines del display y el pulsador.
+- **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
+
+## Conexiones
+
+1. **Pulsador**: Conectado al pin digital 2 y GND. Asegúrate de utilizar una resistencia pull-down si es necesario.
+2. **Display de 7 segmentos**: Los pines del display deben conectarse a los pines digitales del Arduino del 3 al 10. Configura cada segmento según la matriz `numero` en el código.
+3. **Pin A0**: Utilizado para generar la semilla de números aleatorios.
+
+## Código
+
+El siguiente código controla el sistema, generando números aleatorios y mostrándolos en el display de 7 segmentos. 
+
+## Diagrama
+![Imagen de WhatsApp 2024-11-28 a las 09 00 39_1f765229](https://github.com/user-attachments/assets/a42c5bd7-a02c-47fa-8274-690d771511c3)
+
+
+
+# Joystick del equipo de Emmanuel
+
+La exposición que impartieron mis compañeros trato de implementar un joystick que conforme fuera movido encenderia un led puesto que cada lado en donde apuntara el joystick es como encenderia uno de los leds que estarian colocados en forma de cruz para ver como realmente detectaba el moviento en los leds.
+
+## Materiales 
+
+- **Arduino Uno**: Placa de microcontrolador para ejecutar el programa.
+- **Joystick**:
+- **Cables de conexión**: Para conectar los componentes con la placa Arduino.
+- **4 leds**: 
+- **4 Pulsadores**: Para alternar entre los estados de funcionamiento y detenerse.
+- **Resistencias**: 
+- **Protoboard**: Para organizar y montar los componentes de forma temporal.
+- **IDE de Arduino**: Entorno de desarrollo para programar y cargar el código en la placa.
+
+
+
+
+
+
+
+
+
 
 
 
